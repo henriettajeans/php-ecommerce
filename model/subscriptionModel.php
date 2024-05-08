@@ -30,7 +30,7 @@ class SubscriptionModel extends Database
             $stmt->execute([$name, $type, $description, $price]);
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            echo "Kunde inte hämta lägga till en prenumerationsplan (subscriptionModel) " . $e->getMessage();
+            echo "Kunde inte lägga till en prenumerationsplan (subscriptionModel) " . $e->getMessage();
         }
     }
 
@@ -42,7 +42,7 @@ class SubscriptionModel extends Database
             $stmt->execute([$name, $type, $description, $price, $soldDate, $subscriptionId]);
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            echo "Kunde inte hämta lägga till en prenumerationsplan (subscriptionModel) " . $e->getMessage();
+            echo "Kunde inte uppdatera prenumerationsplanen (subscriptionModel) " . $e->getMessage();
         }
     }
 }

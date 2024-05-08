@@ -1,13 +1,11 @@
 <?php
 
-class subscriptionModel extends Database
+class SubscriptionModel extends Database
 {
 
     protected $table = "subscription-plans";
 
-
-
-    public function getAllSubscriptions()
+    public function getSubscriptions()
     {
         return $this->getAll($this->table);
     }

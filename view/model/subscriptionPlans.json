@@ -1,9 +1,5 @@
-{"subscription": {
-    "id": "plan",
-    "value": "Plan",
-    "plan": [{
-        "basic": 
-        [  { "id": "1", 
+{"subscription": [
+          {
           "name": "DevCloud Start", 
           "repository": "20 (public only)",
           "indexing": "Default",
@@ -25,10 +21,7 @@
           "report_invoice": 1,
           "price": 19,
           "onclick": "selectStart()"
-        }],
-        "medium": 
-         [ {
-           "id": "1", 
+        },{
           "name": "DevCloud Medium", 
           "repository": "40 (public and private)",
           "indexing": "Higher",
@@ -51,10 +44,7 @@
           "price": 39,
           "onclick": "selectMedium()"
   
-        }],
-        "advanced":
-       [   {
-           "id": "1", 
+        },{
           "name": "DevCloud Advanced", 
           "repository": "100 (public and private)",
           "indexing": "Highest",
@@ -76,9 +66,5 @@
           "report-invoice": 1,
           "price": 49,
           "onclick": "selectAdvanced()"
-  
         }]
        }
-      ]
-    }
-  }

@@ -1,0 +1,84 @@
+{"subscription": {
+    "id": "plan",
+    "value": "Plan",
+    "plan": [{
+        "basic": 
+        [  { "id": "1", 
+          "name": "DevCloud Start", 
+          "repository": "20 (public only)",
+          "indexing": "Default",
+          "filter-fileextensions": 1,
+          "filter-names": 1,
+          "filter-language": 0,
+          "filter-update": 0,
+          "filter-creation": 0,
+          "filter-tags": 0,
+          "mailcatcher": 1,
+          "email-limit": "10 emails, automatic rolling",
+          "webmail": 1,
+          "code-recipes": 1,
+          "beta": 1,
+          "recipes-limit": "10 code recipes",
+          "time-report": 1,
+          "administrative": 1,
+          "register-time": 1,
+          "report-invoice": 1,
+          "price": 19,
+          "onclick": "selectStart()"
+        }],
+        "medium": 
+         [ {
+           "id": "1", 
+          "name": "DevCloud Medium", 
+          "repository": "40 (public and private)",
+          "indexing": "Higher",
+          "filter-fileextensions": 1,
+          "filter-names": 1,
+          "filter-language": 1,
+          "filter-update": 1,
+          "filter-creation": 0,
+          "filter-tags": 0,
+          "mailcatcher": 1,
+          "email-limit": "50 emails, automatic rolling",
+          "webmail": 1,
+          "code-recipes": 1,
+          "beta": 1,
+          "recipes-limit": "50 code recipes",
+          "time-report": 1,
+          "administrative": 1,
+          "register-time": 1,
+          "report-invoice": 1,
+          "price": 39,
+          "onclick": "selectMedium()"
+  
+        }],
+        "advanced":
+       [   {
+           "id": "1", 
+          "name": "DevCloud Advanced", 
+          "repository": "100 (public and private)",
+          "indexing": "Highest",
+          "filter-fileextensions": 1,
+          "filter-names": 1,
+          "filter-language": 1,
+          "filter-update": 1,
+          "filter-creation": 1,
+          "filter-tags": 1,
+          "mailcatcher": 1,
+          "email-limit": "200 emails, automatic rolling",
+          "webmail": 1,
+          "code-recipes": 1,
+          "beta": 1,
+          "recipes-limit": "200 code recipes",
+          "time-report": 1,
+          "administrative": 1,
+          "register-time": 1,
+          "report-invoice": 1,
+          "price": 49,
+          "onclick": "selectAdvanced()"
+  
+        }]
+       }
+      ]
+    }
+  }

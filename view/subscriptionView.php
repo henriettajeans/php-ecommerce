@@ -20,50 +20,22 @@ if (($json)) {
 
 <h2>Subscription Plans</h2>
 
-<!-- <table>
-    <tr>
-        <th>Plan</th>
-        <th>Start</th>
-        <th>Medium</th>
-        <th>Advanced</th>
-    </tr>
-    <tr>
-        <td>Basic</td>
-        <td>Feature 1</td>
-        <td>$10/month</td>
-        <td><button onclick="subscribe('basic')">Subscribe</button></td>
-    </tr>
-    <tr>
-        <td>Medium</td>
-        <td>Feature 1</td>
-        <td>$20/month</td>
-        <td><button onclick="subscribe('medium')">Subscribe</button></td>
-    </tr>
-    <tr>
-        <td>Premium</td>
-        <td>Feature 1</td>
-        <td>$30/month</td>
-        <td><button onclick="subscribe('premium')">Subscribe</button></td>
-    </tr>
-</table> -->
-
 <?php
 if (isset($message)) {
     echo $message;
 } else {
     echo $message;
 }
-
-
 ?>
+
 <table>
     <tbody>
 
         <!-- <tr> -->
         <th>DevCloud</th>
         <?php foreach ($data as $plan) { ?>
-        <th><?= $plan->name; ?></th>
-        <!-- </tr> -->
+            <th><?= $plan->name; ?></th>
+            <!-- </tr> -->
         <?php
         }
         ?>
@@ -71,10 +43,11 @@ if (isset($message)) {
 
 
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->repository; ?> </td>
+                <td> <?= $plan->repository; ?> </td>
             <?php
             }
             ?>
@@ -84,7 +57,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->indexing; ?> </td>
+                <td> <?= $plan->indexing; ?> </td>
             <?php
             }
             ?>
@@ -93,7 +66,7 @@ if (isset($message)) {
             <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
-            <td> <?= $plan->filter_names; ?> </td>
+                <td> <?= $plan->filter_names; ?> </td>
             <?php
             }
             ?>
@@ -104,7 +77,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->filter_language; ?> </td>
+                <td> <?= $plan->filter_language; ?> </td>
             <?php
             }
             ?>
@@ -114,7 +87,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->filter_fileextensions; ?> </td>
+                <td> <?= $plan->filter_fileextensions; ?> </td>
             <?php
             }
             ?>
@@ -124,7 +97,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->filter_update; ?> </td>
+                <td> <?= $plan->filter_update; ?> </td>
             <?php
             }
             ?>
@@ -134,7 +107,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->filter_creation; ?> </td>
+                <td> <?= $plan->filter_creation; ?> </td>
             <?php
             }
             ?>
@@ -144,7 +117,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->filter_tags; ?> </td>
+                <td> <?= $plan->filter_tags; ?> </td>
             <?php
             }
             ?>
@@ -154,7 +127,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->mailcatcher; ?> </td>
+                <td> <?= $plan->mailcatcher; ?> </td>
             <?php
             }
             ?>
@@ -165,7 +138,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->email_limit; ?> </td>
+                <td> <?= $plan->email_limit; ?> </td>
             <?php
             }
             ?>
@@ -175,7 +148,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->webmail; ?> </td>
+                <td> <?= $plan->webmail; ?> </td>
             <?php
             }
             ?>
@@ -185,7 +158,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->code_recipes; ?> </td>
+                <td> <?= $plan->code_recipes; ?> </td>
             <?php
             }
             ?>
@@ -195,7 +168,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->beta; ?> </td>
+                <td> <?= $plan->beta; ?> </td>
             <?php
             }
             ?>
@@ -205,7 +178,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->recipes_limit; ?> </td>
+                <td> <?= $plan->recipes_limit; ?> </td>
             <?php
             }
             ?>
@@ -215,7 +188,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->time_report; ?> </td>
+                <td> <?= $plan->time_report; ?> </td>
             <?php
             }
             ?>
@@ -225,7 +198,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->administrative; ?> </td>
+                <td> <?= $plan->administrative; ?> </td>
             <?php
             }
             ?>
@@ -235,7 +208,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->register_time; ?> </td> <?php
+                <td> <?= $plan->register_time; ?> </td> <?php
                                                     }
                                                         ?>
         </tr>
@@ -244,7 +217,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->report_invoice; ?> </td>
+                <td> <?= $plan->report_invoice; ?> </td>
             <?php
             }
             ?>
@@ -254,7 +227,7 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-            <td> <?= $plan->price; ?> </td>
+                <td> <?= $plan->price; ?> </td>
             <?php
             }
             ?>

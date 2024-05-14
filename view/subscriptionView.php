@@ -56,77 +56,204 @@ if (isset($message)) {
 
 
 ?>
-<tbody>
-    <tr>
-        <p>DevCloud</p>
+<table>
+    <tbody>
+
+        <!-- <tr> -->
+        <span>DevCloud</span>
         <?php foreach ($data as $plan) { ?>
             <th><?= $plan->name; ?></th>
-    </tr>
-<?php
+            <!-- </tr> -->
+        <?php
         }
-        foreach ($data as $plan) { ?>
-    <tr>
-        <td> <?= $plan->repository; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->indexing; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->filter_names; ?> </td>
-    <tr>
-    </tr>
-    <tr>
-        <td> <?= $plan->filter_language; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->filter_fileextensions; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->filter_update; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->filter_creation; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->filter_tags; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->mailcatcher; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->email_limit; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->webmail; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->code_recipes; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->beta; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->recipes_limit; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->time_report; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->administrative; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->register_time; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->report_invoice; ?> </td>
-    </tr>
-    <tr>
-        <td> <?= $plan->price; ?> </td>
-    </tr>
-    <tr><button> <?= $plan->onclick; ?> </button> </tr>
-    </tr>
-<?php
-        }
-?>
+        ?>
 
-</tbody>
+
+
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->repository; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->indexing; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->filter_names; ?> </td>
+            <?php
+            }
+            ?>
+        <tr>
+
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->filter_language; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->filter_fileextensions; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->filter_update; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->filter_creation; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->filter_tags; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->mailcatcher; ?> </td>
+            <?php
+            }
+            ?>
+
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->email_limit; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->webmail; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->code_recipes; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->beta; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->recipes_limit; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->time_report; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->administrative; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->register_time; ?> </td> <?php
+                                                    }
+                                                        ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->report_invoice; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+
+                <td> <?= $plan->price; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+
+
+        <tr>
+            <?php
+            foreach ($data as $plan) { ?>
+                <button> <?= $plan->onclick; ?> </button>
+            <?php
+            }
+            ?>
+        </tr>
+
+
+    </tbody>
+</table>

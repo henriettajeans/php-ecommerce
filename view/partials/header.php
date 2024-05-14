@@ -17,3 +17,5 @@
             <h1>Aspcode.net</h1>
         </a>
     </header>
+    <?php
+    include 'navbar.php';

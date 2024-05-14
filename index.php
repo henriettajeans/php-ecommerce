@@ -5,6 +5,9 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 
 $pdo = require_once __DIR__ . '/database/connect.php';
 
+//Header
+include 'view/partials/header.php';
+
 //Subscription MVC
 // require_once __DIR__ . '/model/itemModel.php';
 // $itemModel = new subscriptionModel($pdo);
@@ -23,7 +26,7 @@ switch ($request) {
         require __DIR__ . '/view/homeView.php';
         break;
 
-    case '/subscriptions':
+    default:
         require __DIR__ . '/view/subscriptionView.php';
         break;
 
@@ -31,13 +34,13 @@ switch ($request) {
         require __DIR__ . '/view/contact.php';
         break;
 
-    default:
-        http_response_code(404);
-        require __DIR__ . '/view/404.php';
-        break;
+        // default:
+        //     http_response_code(404);
+        //     require __DIR__ . '/view/404.php';
+        //     break;
 }
 
-include 'view/partials/header.php';
+
 ?>
 
 <link rel="stylesheet" href="view/partials/header.css">

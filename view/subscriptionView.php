@@ -60,10 +60,10 @@ if (isset($message)) {
     <tbody>
 
         <!-- <tr> -->
-        <span>DevCloud</span>
+        <th>DevCloud</th>
         <?php foreach ($data as $plan) { ?>
-            <th><?= $plan->name; ?></th>
-            <!-- </tr> -->
+        <th><?= $plan->name; ?></th>
+        <!-- </tr> -->
         <?php
         }
         ?>
@@ -74,185 +74,201 @@ if (isset($message)) {
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->repository; ?> </td>
+            <td> <?= $plan->repository; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->indexing; ?> </td>
+            <td> <?= $plan->indexing; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
-
-                <td> <?= $plan->filter_names; ?> </td>
+            <td> <?= $plan->filter_names; ?> </td>
             <?php
             }
             ?>
-        <tr>
-
+            <!-- <tr> -->
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->filter_language; ?> </td>
-            <?php
-            }
-            ?>
-        </tr>
-        <tr>
-            <?php
-            foreach ($data as $plan) { ?>
-
-                <td> <?= $plan->filter_fileextensions; ?> </td>
+            <td> <?= $plan->filter_language; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->filter_update; ?> </td>
+            <td> <?= $plan->filter_fileextensions; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->filter_creation; ?> </td>
+            <td> <?= $plan->filter_update; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->filter_tags; ?> </td>
+            <td> <?= $plan->filter_creation; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->mailcatcher; ?> </td>
+            <td> <?= $plan->filter_tags; ?> </td>
+            <?php
+            }
+            ?>
+        </tr>
+        <tr>
+            <td>Thing</td>
+            <?php
+            foreach ($data as $plan) { ?>
+
+            <td> <?= $plan->mailcatcher; ?> </td>
             <?php
             }
             ?>
 
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->email_limit; ?> </td>
+            <td> <?= $plan->email_limit; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->webmail; ?> </td>
+            <td> <?= $plan->webmail; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->code_recipes; ?> </td>
+            <td> <?= $plan->code_recipes; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->beta; ?> </td>
+            <td> <?= $plan->beta; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->recipes_limit; ?> </td>
+            <td> <?= $plan->recipes_limit; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->time_report; ?> </td>
+            <td> <?= $plan->time_report; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->administrative; ?> </td>
+            <td> <?= $plan->administrative; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->register_time; ?> </td> <?php
+            <td> <?= $plan->register_time; ?> </td> <?php
                                                     }
                                                         ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->report_invoice; ?> </td>
+            <td> <?= $plan->report_invoice; ?> </td>
             <?php
             }
             ?>
         </tr>
         <tr>
+            <td>Thing</td>
             <?php
             foreach ($data as $plan) { ?>
 
-                <td> <?= $plan->price; ?> </td>
+            <td> <?= $plan->price; ?> </td>
             <?php
             }
             ?>
         </tr>
 
 
-        <tr>
+        <!-- <tr>
             <?php
             foreach ($data as $plan) { ?>
                 <button> <?= $plan->onclick; ?> </button>
             <?php
             }
             ?>
-        </tr>
+        </tr> -->
 
 
     </tbody>

@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <a href="http://localhost:888/php-ecommerce/index.php">
+        <a href="http://localhost:8888/php-ecommerce/">
             <h1>Aspcode.net</h1>
         </a>
     </header>

@@ -58,11 +58,11 @@ if (file_exists('/model/subscriptionPlans.json')) {
     <tbody>
         <tr>
             <?php foreach ($plans as $plan) { ?>
-                <th><?= $plan->name; ?></th>
+            <th><?= $plan->name; ?></th>
 
 
         </tr>
-    <?php
+        <?php
             }
             foreach ($plans as $plan) { ?>
         <tr>
@@ -86,11 +86,11 @@ if (file_exists('/model/subscriptionPlans.json')) {
             <td> <?= $plan->report_invoice; ?> </td>
             <td> <?= $plan->price; ?> </td>
             <button> <?= $plan->onclick; ?> </button>
-
+        </tr>
         <?php
             }
         ?>
-        </tr>
+
     </tbody>
     <?php
 

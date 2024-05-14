@@ -6,8 +6,8 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 $pdo = require_once __DIR__ . '/database/connect.php';
 
 //Subscription MVC
-require_once __DIR__ . '/model/itemModel.php';
-$itemModel = new subscriptionModel($pdo);
+// require_once __DIR__ . '/model/itemModel.php';
+// $itemModel = new subscriptionModel($pdo);
 
 //User MVC
 
@@ -16,7 +16,7 @@ $itemModel = new subscriptionModel($pdo);
 //Views
 
 //Routes
-$request = $_SERVER['REQUEST_URI'];
+$request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 switch ($request) {
     case '':
     case '/':
@@ -34,6 +34,7 @@ switch ($request) {
     default:
         http_response_code(404);
         require __DIR__ . '/view/404.php';
+        break;
 }
 
 include 'view/partials/header.php';
